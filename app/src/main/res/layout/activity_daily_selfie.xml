@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,8 +10,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.tsui.louis.dailyselfie.DailySelfie">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/daily_selfie_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:logo="@mipmap/ic_launcher"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ListView
+        android:id="@+id/photos_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/daily_selfie_toolbar"/>
 </RelativeLayout>

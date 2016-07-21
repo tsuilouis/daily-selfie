@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">DailySelfie</string>
+    <string name="app_name">Daily Selfie</string>
+    <string name="action_camera">Take a picture</string>
 </resources>
